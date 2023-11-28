@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DualSense Lading Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="img/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Controles Wireless</a></li>
+                    <li><a href="">Acessorios VR</a></li>
+                    <li><a href="">Controles de Midias</a></li>
+                    <li><a href="">Outros</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>DualSense PS5</h2>
+                <h3>Controle Wireless para PS5</h3>
+                <p>(Compatibilidade/Generico)</p>
+                <button type="button"><a href="https://www.fastshop.com.br/web/p/d/SO3006456RXO_PRD/controle-sem-fio-dualsense-sony-galactic-purple-para-playstation5">Compre agora<img src="img/arrow.png"></a></button>
+            </div>
+            <div class="col-2">
+                <img src="img/dualsense.webp" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="img/add.png">
+                    <p><small>Adicione ao carrinho</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="img/fb.png">
+            <img src="img/tw.png">
+            <img src="img/ig.png">
+        </div>
+    </div>
+
+
+
+
+
+<script>
+    var menuList = document.getElementById("menuList");
+
+    menuList.style.maxHeight = "0px";
+
+    function togglemenu(){
+        if(menuList.style.maxHeight == "0px"){
+            menuList.style.maxHeight = "130px";
+        }
+        else{
+            menuList.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+</body>
+</html>
